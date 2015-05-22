@@ -1,0 +1,86 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ff1e90ff"
+    tools:context=".LoginActivity"
+    android:id="@+id/login_screen"
+    style="@style/AlertDialog.AppCompat">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextFields">
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/Email"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Username/Email Adress" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Password"
+        android:layout_below="@+id/Email"
+        android:layout_alignLeft="@+id/Email"
+        android:layout_alignStart="@+id/Email"
+        android:hint="Password" />
+
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/Password"
+        android:layout_toRightOf="@+id/TextFields"
+        android:layout_marginTop="31dp"
+        android:hint="Remember me"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:background="#ff00caff"
+        style="@style/AlertDialog.AppCompat"
+        android:elegantTextHeight="false"
+        android:focusableInTouchMode="true"
+        android:ellipsize="middle"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/RegisterButton"
+        android:background="#ff00caff"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/loginButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
